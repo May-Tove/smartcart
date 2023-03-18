@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import Layout from "./components/layout/index.jsx";
 import {
   Home,
   Product,
@@ -10,7 +11,7 @@ import {
 
 function App() {
   return (
-    <div>
+    <>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -21,7 +22,7 @@ function App() {
           <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
-    </div>
+    </>
   );
 }
 
