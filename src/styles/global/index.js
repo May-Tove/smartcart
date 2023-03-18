@@ -36,6 +36,10 @@ const GlobalStyle = createGlobalStyle`
 
     a{
         color: var(--color-text);
+
+        &:hover{
+            color: var(--color-primary);
+        }
     }
 
 `;
