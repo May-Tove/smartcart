@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
     }
         
     html {
-        --color-primary: orange;
+        --color-primary: #1aa7ec;
         --color-secondary: #F4A224;
         --color-light: #f6f6f2;
         --color-dark: #F4A224;
@@ -20,7 +20,8 @@ const GlobalStyle = createGlobalStyle`
     }
     
     body {
-        background: white;
+        background: var(--color-light);
+        color: var(--color-text);
     }
 
     main {
@@ -31,6 +32,10 @@ const GlobalStyle = createGlobalStyle`
 
         @media screen and (min-width: 768px){
             width: 80vw;
+        }
+
+        @media screen and (min-width: 1440px){
+            width: 70vw;
         }
     }
 
