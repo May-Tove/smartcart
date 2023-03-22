@@ -42,7 +42,7 @@ export const HeaderMain = styled.header`
 `;
 
 export const Nav = styled.nav`
-  background-color: #fdfbe2;
+  background-color: ${(props) => props.theme.colors.grey};
   height: 80px;
   font-size: 18px;
   display: flex;
@@ -73,7 +73,7 @@ export const NavMenu = styled.ul`
     width: 100%;
     height: 90vh;
     transition: all 0.5s ease;
-    background-color: #fdfbe2;
+    background-color: ${(props) => props.theme.colors.grey};
     margin-right: 0;
   }
 `;
