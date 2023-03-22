@@ -1,5 +1,10 @@
 import React from "react";
+import ProductDetails from "../../components/ProductDetails";
 
 export const Product = () => {
-  return <main>Product</main>;
+  return (
+    <main>
+      <ProductDetails />
+    </main>
+  );
 };
