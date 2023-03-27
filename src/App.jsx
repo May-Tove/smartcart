@@ -4,9 +4,9 @@ import {
   Home,
   Product,
   Contact,
-  Cart,
   Checkout,
   PageNotFound,
+  CheckoutSuccess,
 } from "./pages/index.js";
 
 function App() {
@@ -17,8 +17,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="Product/:id" element={<Product />} />
           <Route path="Contact" element={<Contact />} />
-          <Route path="Cart" element={<Cart />} />
           <Route path="Checkout" element={<Checkout />} />
+          <Route path="CheckoutSuccess" element={<CheckoutSuccess />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>

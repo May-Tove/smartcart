@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { CgMenu, CgClose } from "react-icons/cg";
 import Logo from "../../assets/smartcart-logo-color.png";
 import LogoIcon from "../../assets/smartcart-new-logo-color.png";
-import { CartIcon } from "../shoppingBagIcon";
+import { CartIcon } from "../CartIcon";
 import { SearchBar } from "../SearchBar";
 import * as S from "./index.styles.js";
 
@@ -37,7 +37,7 @@ const Header = () => {
                 </S.NavLinks>
               </S.NavItem>
             </S.NavMenu>
-            <Link to="/Cart">
+            <Link to="/Checkout">
               <CartIcon />
             </Link>
             <S.MobileIcon onClick={handleClick}>
