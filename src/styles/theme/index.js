@@ -9,6 +9,10 @@ const theme = {
     lightText: "var(--color-text-light)",
     textColor: "var(--color-text)",
   },
+
+  shadows: {
+    boxShadow: "var(--box-shadow)",
+  },
 };
 
 export default theme;

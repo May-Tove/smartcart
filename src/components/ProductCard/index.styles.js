@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ProductWrapper = styled.article`
   display: flex;
   flex-direction: column;
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  box-shadow: ${(props) => props.theme.shadows.boxShadow};
   height: fit-content;
   position: relative;
 `;

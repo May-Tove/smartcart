@@ -16,12 +16,7 @@ export const SearchWrapper = styled.div`
 `;
 
 export const SearchBar = styled.input`
-  border: none;
-  font-size: 16px;
-  padding: 0.3rem;
   padding-left: 2.2rem;
-  border-radius: 10px;
-  border: 0.2px solid lightgrey;
   width: 100%;
 `;
 
@@ -42,7 +37,7 @@ export const ResultWrapper = styled.ul`
   max-height: 400px;
   overflow-y: scroll;
   background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: ${(props) => props.theme.shadows.boxShadow};
   list-style: none;
   padding: 1rem;
   margin: 0 auto;

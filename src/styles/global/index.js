@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
         --color-text-light: white;
         --color-text: #454545;
         --color-grey: #EFEFE9;
+        --box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     }
     
     body {
@@ -45,6 +46,14 @@ const GlobalStyle = createGlobalStyle`
         &:hover{
             color: var(--color-primary);
         }
+    }
+
+    input, textarea{
+        border: none;
+        font-size: 16px;
+        padding: 0.3rem;
+        border-radius: 10px;
+        border: 0.2px solid lightgrey;
     }
 
 `;
