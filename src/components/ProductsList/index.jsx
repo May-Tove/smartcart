@@ -1,6 +1,8 @@
 import React from "react";
 import useApi from "../../hooks/useApi";
 import { API_URL } from "../../shared/url";
+import FetchError from "../FetchError";
+import Loader from "../Loader";
 import ProductCard from "../ProductCard";
 import * as S from "./index.styles";
 
@@ -8,11 +10,13 @@ function ProductsList() {
   const { products, isLoading, isError } = useApi(API_URL);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <Loader />;
   }
 
   if (isError) {
-    return <div>Error</div>;
+    return (
+      <FetchError message="We could not load any products, please refresh the page or contact our support" />
+    );
   }
 
   return (
