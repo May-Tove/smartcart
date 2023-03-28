@@ -13,14 +13,3 @@ export const ReviewsContainer = styled.div`
     font-weight: bold;
   }
 `;
-
-export const RatingContainer = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 5px;
-`;
-
-export const Rating = styled.span`
-  font-weight: bold;
-  font-size: 14px;
-`;

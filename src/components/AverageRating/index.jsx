@@ -2,6 +2,11 @@ import React, { useState, useEffect } from "react";
 import { RatingStars } from "../RatingStars";
 import * as S from "./index.styles";
 
+/**
+ * Renders the average rating of a list of reviews as stars and a number of reviews
+ * @param {Array} props.reviews - The list of reviews to calculate the average rating
+ * @returns {JSX.Element} - The JSX for the AverageRating component
+ */
 export function AverageRating({ reviews }) {
   const [averageRating, setAverageRating] = useState(0);
 
@@ -17,15 +22,9 @@ export function AverageRating({ reviews }) {
   }, [reviews]);
 
   return (
-    <>
-      <S.RatingContainer>
-        <S.Stars>
-          {" "}
-          <RatingStars rating={averageRating} />
-        </S.Stars>
-        <span>{averageRating.toFixed(1)}</span>
-        <span>({reviews.length} reviews)</span>
-      </S.RatingContainer>
-    </>
+    <S.RatingContainer>
+      <RatingStars rating={averageRating} />
+      <span>({reviews.length} reviews)</span>
+    </S.RatingContainer>
   );
 }

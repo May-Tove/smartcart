@@ -13,13 +13,7 @@ export function ReviewSection({ reviews }) {
           {reviews.map(({ username, rating, description }, index) => (
             <S.ReviewsContainer key={index}>
               <h4>{username}</h4>
-              <S.RatingContainer>
-                <span>
-                  {" "}
-                  <RatingStars rating={rating} />
-                </span>
-                <S.Rating>{rating.toFixed(1)}</S.Rating>
-              </S.RatingContainer>
+              <RatingStars rating={rating} />
               <p>{description}</p>
             </S.ReviewsContainer>
           ))}

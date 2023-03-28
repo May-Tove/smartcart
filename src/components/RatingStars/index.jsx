@@ -1,6 +1,13 @@
 import { useState, useEffect } from "react";
 import { IoMdStar, IoMdStarHalf, IoMdStarOutline } from "react-icons/io";
+import * as S from "./index.styles";
 
+/**
+ * Renders a star rating component based on a given rating.
+ * @param {object} props - The component props.
+ * @param {number} props.rating - The rating to display, between 0 and 5.
+ * @returns {JSX.Element} The rendered star rating component.
+ */
 export function RatingStars({ rating }) {
   const [stars, setStars] = useState([]);
 
@@ -23,5 +30,10 @@ export function RatingStars({ rating }) {
     setStars(newStars);
   }, [rating]);
 
-  return <div>{stars}</div>;
+  return (
+    <S.RatingContainer>
+      <S.Rating> {rating.toFixed(1)}</S.Rating>
+      <S.Stars>{stars}</S.Stars>
+    </S.RatingContainer>
+  );
 }
