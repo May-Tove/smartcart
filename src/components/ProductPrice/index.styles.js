@@ -18,7 +18,6 @@ export const DiscountedPrice = styled.span`
 `;
 
 export const DiscountAmount = styled.span`
-  display: ${(props) => (props.isOnSale ? "block" : "none")};
   position: absolute;
   top: 0;
   left: 0;
