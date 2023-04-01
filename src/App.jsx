@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import Layout from "./components/layout/index.jsx";
+import Layout from "./components/Layout/index.jsx";
 import {
   Home,
   Product,
@@ -8,10 +8,12 @@ import {
   PageNotFound,
   CheckoutSuccess,
 } from "./pages/index.js";
+import ScrollToTop from "./utilities/scrollToTop/index.jsx";
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
