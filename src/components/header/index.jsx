@@ -4,7 +4,7 @@ import { CgMenu, CgClose } from "react-icons/cg";
 import Logo from "../../assets/smartcart-logo-color.png";
 import LogoIcon from "../../assets/smartcart-new-logo-color.png";
 import CartIcon from "../CartIcon";
-import SearchBar from "../SearchBar";
+import SearchBar from "../searchbar";
 import * as S from "./index.styles.js";
 
 /**
