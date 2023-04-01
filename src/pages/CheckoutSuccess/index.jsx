@@ -3,7 +3,7 @@ import CheckoutSuccessMessage from "../../components/CheckoutSuccessMessage";
 
 export const CheckoutSuccess = () => {
   return (
-    <main>
+    <main className="main-global-styling">
       <CheckoutSuccessMessage />
     </main>
   );

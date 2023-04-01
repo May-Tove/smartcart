@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const PageWrapper = styled.div`
+export const PageWrapper = styled.section`
   display: flex;
   gap: 4rem;
   margin-top: 1rem;

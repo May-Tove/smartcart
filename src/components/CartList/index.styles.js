@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const CartPageWrapper = styled.div`
+export const CartPageWrapper = styled.section`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 3rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;

@@ -20,14 +20,14 @@ function ProductsList() {
   }
 
   return (
-    <>
+    <section className="main-global-styling">
       <h2>Our Products</h2>
       <S.ListContainer>
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
       </S.ListContainer>
-    </>
+    </section>
   );
 }
 

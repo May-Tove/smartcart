@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CheckoutWrapper = styled.div`
+export const CheckoutWrapper = styled.section`
   display: flex;
   flex-direction: column;
   gap: 1rem;

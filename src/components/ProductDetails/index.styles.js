@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const DetailsContainer = styled.div`
+export const DetailsContainer = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   width: 100%;

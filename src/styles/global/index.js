@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
         color: var(--color-text);
     }
 
-    main {
+    .main-global-styling {
         min-height: 100vh;
         width: 90vw;
         margin: 0 auto;
