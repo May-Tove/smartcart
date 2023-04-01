@@ -3,4 +3,4 @@ export * from "./Product/index.jsx";
 export * from "./CheckoutSuccess/index.jsx";
 export * from "./Checkout/index.jsx";
 export * from "./Contact/index.jsx";
-export * from "./404/index.jsx";
+export * from "./PageNotFound/index.jsx";
