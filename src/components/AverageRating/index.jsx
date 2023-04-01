@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { RatingStars } from "../RatingStars";
+import RatingStars from "../RatingStars";
 import * as S from "./index.styles";
 
 /**
@@ -7,7 +7,7 @@ import * as S from "./index.styles";
  * @param {Array} props.reviews - The list of reviews to calculate the average rating
  * @returns {JSX.Element} - The JSX for the AverageRating component
  */
-export function AverageRating({ reviews }) {
+const AverageRating = ({ reviews }) => {
   const [averageRating, setAverageRating] = useState(0);
 
   // Calculate average rating whenever reviews change
@@ -27,4 +27,6 @@ export function AverageRating({ reviews }) {
       <span>({reviews.length} reviews)</span>
     </S.RatingContainer>
   );
-}
+};
+
+export default AverageRating;

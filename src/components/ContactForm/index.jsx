@@ -6,7 +6,10 @@ import { PrimaryButton } from "../Button/index.styles";
 import ContactSuccess from "../ContactSuccess";
 import * as S from "./index.styles";
 
-function ContactForm() {
+/**
+ * A component that displays a contact form and a contact information section
+ * */
+const ContactForm = () => {
   const { handleInputChange, formData, handleSubmit, errors, isSubmitted } =
     useForm(validateForm);
 
@@ -91,6 +94,6 @@ function ContactForm() {
       )}
     </>
   );
-}
+};
 
 export default ContactForm;

@@ -47,7 +47,7 @@ const useCartStore = create((set) => ({
  * A hook that provides access to the cart state and its actions.
  * @returns {Object} An object with cart state and actions to modify it.
  */
-export function useCart() {
+const useCart = () => {
   const addProductToCart = useCartStore((state) => state.addProductToCart);
   const cart = useCartStore((state) => state.cart);
   const clearCart = useCartStore((state) => state.clearCart);
@@ -77,4 +77,6 @@ export function useCart() {
     decreaseFromCart,
     removeFromCart,
   };
-}
+};
+
+export default useCart;

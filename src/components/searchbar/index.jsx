@@ -1,21 +1,28 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import useApi from "../../hooks/useApi/index.jsx";
-import { API_URL } from "../../shared/url.js";
+import API_URL from "../../shared/url.js";
 import * as S from "./index.styles.js";
 
-export const SearchBar = () => {
+/**
+ * A search bar component that allows users to search for products.
+ * @returns {JSX.Element} A search bar component with search results dropdown.
+ */
+const SearchBar = () => {
   const [searchInput, setSearchInput] = useState("");
   const { products } = useApi(API_URL);
 
+  // Updates the searchInput state based on user input.
   const handleSearchInput = (event) => {
     setSearchInput(event.target.value);
   };
 
+  // Clears the search input field when a search result link is clicked.
   const handleLinkClick = () => {
     setSearchInput("");
   };
 
+  // Filters the list of products based on the user's search input.
   const renderDropdown = () => {
     const filteredProducts = products.filter((product) =>
       product.title.toLowerCase().includes(searchInput.toLowerCase())
@@ -62,3 +69,5 @@ export const SearchBar = () => {
     </S.SearchForm>
   );
 };
+
+export default SearchBar;

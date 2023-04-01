@@ -11,6 +11,8 @@ const CURRENCY_FORMATTER = new Intl.NumberFormat(undefined, {
  * const price = 1234.56;
  * const formattedPrice = formatCurrency(price); // "kr 1 234,56"
  */
-export function formatCurrency(number) {
+const formatCurrency = (number) => {
   return CURRENCY_FORMATTER.format(number);
-}
+};
+
+export default formatCurrency;

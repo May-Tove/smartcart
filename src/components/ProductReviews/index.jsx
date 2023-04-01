@@ -1,8 +1,12 @@
 import React from "react";
-import { RatingStars } from "../RatingStars";
+import RatingStars from "../RatingStars";
 import * as S from "./index.styles";
 
-export function ReviewSection({ reviews }) {
+/**
+ * A component that displays a list of reviews for a product.
+ * @param {Object[]} reviews - An array of review objects.
+ */
+const ReviewSection = ({ reviews }) => {
   const hasReviews = reviews && reviews.length > 0;
 
   return (
@@ -22,4 +26,6 @@ export function ReviewSection({ reviews }) {
       {!hasReviews && <p>This product has no reviews yet</p>}
     </>
   );
-}
+};
+
+export default ReviewSection;

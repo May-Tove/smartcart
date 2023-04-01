@@ -1,6 +1,14 @@
 import { useEffect, useState } from "react";
 
-function useApi(url) {
+/**
+ * A custom hook for fetching data from an API.
+ * @param {string} url - The URL of the API to fetch data from.
+ * @returns {Object} An object with properties for the fetched data, loading state, and error state.
+ * @property {Array} products - The fetched data from the API.
+ * @property {boolean} isLoading - A boolean indicating whether the data is currently being fetched.
+ * @property {boolean} isError - A boolean indicating whether an error occurred while fetching the data.
+ */
+const useApi = (url) => {
   const [products, setProducts] = useState([]);
 
   const [isLoading, setIsLoading] = useState(false);
@@ -25,6 +33,6 @@ function useApi(url) {
   }, [url]);
 
   return { products, isLoading, isError };
-}
+};
 
 export default useApi;

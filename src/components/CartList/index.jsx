@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { formatCurrency } from "../../utilities/formatCurrency";
-import { useCart } from "../../hooks/useCart";
+import formatCurrency from "../../utilities/formatCurrency";
+import useCart from "../../hooks/useCart";
 import { PrimaryButton } from "../Button/index.styles";
 import { CgTrash, CgCloseO } from "react-icons/cg";
 import * as S from "./index.styles";
@@ -10,7 +10,7 @@ import * as S from "./index.styles";
  * A component that displays a list of items in the shopping cart and provides functionality to manipulate items in the cart.
  * @returns {JSX.Element} The JSX element representing the cart list.
  */
-function CartList() {
+const CartList = () => {
   const { cart, addToCart, clearCart, decreaseFromCart, removeFromCart } =
     useCart();
 
@@ -107,6 +107,6 @@ function CartList() {
       )}
     </>
   );
-}
+};
 
 export default CartList;

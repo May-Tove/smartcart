@@ -7,7 +7,7 @@
  * @param {string} formData.body - The body value entered in the form
  * @returns {Object} An object containing validation errors, if any
  */
-function validateForm(formData) {
+const validateForm = (formData) => {
   let errors = {};
 
   if (!formData.name.trim()) {
@@ -35,6 +35,6 @@ function validateForm(formData) {
   }
 
   return errors;
-}
+};
 
 export default validateForm;

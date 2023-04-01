@@ -1,5 +1,5 @@
 import React from "react";
-import { formatCurrency } from "../../utilities/formatCurrency";
+import formatCurrency from "../../utilities/formatCurrency";
 import * as S from "./index.styles";
 
 /**
@@ -9,7 +9,7 @@ import * as S from "./index.styles";
  * @param {number} props.discountedPrice - The discounted price of the product.
  * @returns {JSX.Element} - The JSX markup for the product price.
  */
-export function ProductPrice({ price, discountedPrice }) {
+export const ProductPrice = ({ price, discountedPrice }) => {
   const originalPrice = formatCurrency(price);
   const onSalePrice = formatCurrency(discountedPrice);
   const isDiscounted = discountedPrice < price;
@@ -20,7 +20,7 @@ export function ProductPrice({ price, discountedPrice }) {
       <S.Price isValid={!isDiscounted}>{originalPrice}</S.Price>
     </S.PriceContainer>
   );
-}
+};
 
 /**
  * A component that displays the discount amount and percentage of a product.
@@ -29,10 +29,10 @@ export function ProductPrice({ price, discountedPrice }) {
  * @param {number} props.discountedPrice - The discounted price of the product.
  * @returns {JSX.Element} A React JSX element that displays the discount amount and percentage of the product.
  */
-export function ProductDiscount({ price, discountedPrice }) {
+export const ProductDiscount = ({ price, discountedPrice }) => {
   const discount = Math.round(((price - discountedPrice) / price) * 100);
 
   return discountedPrice < price ? (
     <S.DiscountAmount isOnSale={true}>{`${discount}% OFF`}</S.DiscountAmount>
   ) : null;
-}
+};

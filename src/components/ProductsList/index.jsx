@@ -1,12 +1,16 @@
 import React from "react";
 import useApi from "../../hooks/useApi";
-import { API_URL } from "../../shared/url";
+import API_URL from "../../shared/url";
 import FetchError from "../FetchError";
 import Loader from "../Loader";
 import ProductCard from "../ProductCard";
 import * as S from "./index.styles";
 
-function ProductsList() {
+/**
+ * A component that renders a list of products fetched from an API.
+ * @returns {JSX.Element} A component that renders a list of products.
+ */
+const ProductsList = () => {
   const { products, isLoading, isError } = useApi(API_URL);
 
   if (isLoading) {
@@ -29,6 +33,6 @@ function ProductsList() {
       </S.ListContainer>
     </section>
   );
-}
+};
 
 export default ProductsList;

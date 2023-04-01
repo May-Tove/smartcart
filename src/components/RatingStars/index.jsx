@@ -8,7 +8,7 @@ import * as S from "./index.styles";
  * @param {number} props.rating - The rating to display, between 0 and 5.
  * @returns {JSX.Element} The rendered star rating component.
  */
-export function RatingStars({ rating }) {
+const RatingStars = ({ rating }) => {
   const [stars, setStars] = useState([]);
 
   useEffect(() => {
@@ -36,4 +36,6 @@ export function RatingStars({ rating }) {
       <S.Stars>{stars}</S.Stars>
     </S.RatingContainer>
   );
-}
+};
+
+export default RatingStars;

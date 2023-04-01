@@ -7,7 +7,7 @@ import * as S from "./index.styles";
  * Renders a success message when a customer's order has been confirmed.
  * @returns {JSX.Element} A JSX.Element containing a message that the order is confirmed, thanking the customer for shopping and a button to go back to the shop.
  */
-function CheckoutSuccessMessage() {
+const CheckoutSuccessMessage = () => {
   return (
     <S.CheckoutWrapper>
       <h1>Your order is confirmed</h1>
@@ -17,6 +17,6 @@ function CheckoutSuccessMessage() {
       </Link>
     </S.CheckoutWrapper>
   );
-}
+};
 
 export default CheckoutSuccessMessage;

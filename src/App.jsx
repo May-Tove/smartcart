@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import ScrollToTop from "./utilities/scrollToTop/index.jsx";
 import Layout from "./components/Layout/index.jsx";
 import {
   Home,
@@ -8,7 +9,6 @@ import {
   PageNotFound,
   CheckoutSuccess,
 } from "./pages/index.js";
-import ScrollToTop from "./utilities/scrollToTop/index.jsx";
 
 function App() {
   return (
