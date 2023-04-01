@@ -6,15 +6,7 @@ import { ProductDiscount, ProductPrice } from "../ProductPrice";
 import * as S from "./index.styles";
 
 function ProductCard({
-  product: {
-    imageUrl,
-    title,
-
-    price,
-    discountedPrice,
-    reviews,
-    id,
-  },
+  product: { imageUrl, title, price, discountedPrice, reviews, id },
 }) {
   return (
     <S.ProductWrapper>
