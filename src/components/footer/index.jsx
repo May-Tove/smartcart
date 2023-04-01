@@ -23,8 +23,8 @@ const Footer = () => {
           </S.LinkGroup>
           <S.LinkGroup>
             <span>Support</span>
-            <a href="#">FAQs</a>
-            <a href="#">Policy</a>
+            <span>FAQs</span>
+            <span>Policy</span>
           </S.LinkGroup>
           <S.LinkGroup>
             <span>Payment Methods</span>
