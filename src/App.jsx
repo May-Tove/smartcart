@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import ScrollToTop from "./utilities/scrollToTop/index.jsx";
-import Layout from "./components/Layout/index";
+import Layout from "./components/layout/index";
 import {
   Home,
   Product,
