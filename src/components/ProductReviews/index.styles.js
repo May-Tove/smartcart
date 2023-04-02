@@ -7,6 +7,7 @@ export const ReviewsHeading = styled.h3`
 export const ReviewsContainer = styled.div`
   padding: 1rem;
   margin-bottom: 10px;
+  border-radius: ${(props) => props.theme.borderRadius.radius};
   background-color: ${(props) => props.theme.colors.grey};
 
   & h4 {

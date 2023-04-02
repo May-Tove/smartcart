@@ -7,7 +7,7 @@ export const RatingContainer = styled.div`
 `;
 
 export const Rating = styled.span`
-  font-weight: bold;
+  font-weight: 500;
   font-size: 14px;
 `;
 

@@ -50,10 +50,12 @@ const ProductDetails = () => {
     <S.DetailsContainer>
       <S.ProductImage src={imageUrl} alt={title} />
       <S.ProductInfoContainer>
-        <h1>{title}</h1>
-        <AverageRating reviews={reviews || []} />
-        <ProductDiscount {...products} />
+        <div>
+          <h1>{title}</h1>
+          <AverageRating reviews={reviews || []} />
+        </div>
         <ProductPrice {...products} />
+        <ProductDiscount {...products} />
         <p>{description}</p>
         <PrimaryButton onClick={onAddToCartButtonClick}>
           Add to Cart

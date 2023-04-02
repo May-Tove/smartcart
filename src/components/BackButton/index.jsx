@@ -17,7 +17,7 @@ const BackButton = () => {
 
   return (
     <S.BackButton onClick={handleClick}>
-      <CgArrowLeft /> Back
+      <CgArrowLeft aria-label="Left arrow icon" /> Back
     </S.BackButton>
   );
 };

@@ -48,7 +48,7 @@ const CartList = () => {
             <S.CartHeader>
               <h3>Your cart - {totalItems} items</h3>
               <S.ClearButton onClick={clearCart}>
-                <CgCloseO /> Clear cart
+                <CgCloseO aria-label="Close icon" /> Clear cart
               </S.ClearButton>
             </S.CartHeader>
 
@@ -75,7 +75,7 @@ const CartList = () => {
                   </S.ProductDetails>
 
                   <S.RemoveButton onClick={() => removeFromCart(item)}>
-                    <CgTrash /> Remove
+                    <CgTrash aria-label="Trash can icon" /> Remove
                   </S.RemoveButton>
                 </S.Item>
               );

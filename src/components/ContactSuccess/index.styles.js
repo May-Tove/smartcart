@@ -18,8 +18,8 @@ export const Popup = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  background-color: white;
+  background-color: ${(props) => props.theme.colors.white};
   padding: 3rem;
-  border-radius: 10px;
+  border-radius: ${(props) => props.theme.borderRadius.radius};
   box-shadow: ${(props) => props.theme.shadows.boxShadow};
 `;

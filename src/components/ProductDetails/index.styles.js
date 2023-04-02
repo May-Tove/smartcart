@@ -9,6 +9,7 @@ export const DetailsContainer = styled.section`
 `;
 
 export const ProductImage = styled.img`
+  border-radius: ${(props) => props.theme.borderRadius.radius};
   width: 100%;
   height: auto;
   max-height: 700px;

@@ -3,15 +3,20 @@ const theme = {
     primary: "var(--color-primary)",
     secondary: "var(--color-secondary)",
     light: "var(--color-light)",
+    white: "var(--color-white)",
     grey: "var(--color-grey)",
-    dark: "var(--color-dark)",
     black: "var(--color-black)",
-    lightText: "var(--color-text-light)",
+    textLight: "var(--color-text-light)",
     textColor: "var(--color-text)",
+    textMuted: "var(--color-text-muted)",
   },
 
   shadows: {
     boxShadow: "var(--box-shadow)",
+  },
+
+  borderRadius: {
+    radius: "var(--border-radius)",
   },
 };
 

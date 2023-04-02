@@ -26,13 +26,13 @@ const ContactForm = () => {
             </p>
             <S.InfoGroup>
               <p>
-                <CgMail /> Email
+                <CgMail aria-label="Email icon" /> Email
               </p>
               <a href="mailto:smartcart@contact.com">smartcart@contact.com</a>
             </S.InfoGroup>
             <S.InfoGroup>
               <p>
-                <CgSmartphone /> Phone
+                <CgSmartphone aria-label="Smart phone icon" /> Phone
               </p>
               <a href="tel:+4712345678">+47 12 34 56 78</a>
             </S.InfoGroup>

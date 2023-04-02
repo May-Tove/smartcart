@@ -18,8 +18,10 @@ const ProductCard = ({
       <S.ProductImage src={imageUrl} alt={title} />
       <ProductDiscount discountedPrice={discountedPrice} price={price} />
       <S.CardBody>
-        <S.ProductHeading>{title}</S.ProductHeading>
-        <AverageRating reviews={reviews} />
+        <S.CardHeader>
+          <S.ProductHeading>{title}</S.ProductHeading>
+          <AverageRating reviews={reviews} />
+        </S.CardHeader>
         <S.CardFooter>
           <Link to={`/Product/${id}`}>
             <PrimaryButton>View</PrimaryButton>

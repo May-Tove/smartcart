@@ -12,7 +12,7 @@ export const CartOverlay = styled.div`
   top: -6px;
   right: -6px;
   background-color: ${(props) => props.theme.colors.primary};
-  color: white;
+  color: ${(props) => props.theme.colors.white};
   font-weight: bold;
   border-radius: 50%;
   width: 17px;

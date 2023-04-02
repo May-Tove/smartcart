@@ -11,8 +11,9 @@ export const HeroImg = styled.section`
   background-position: center;
   width: 100%;
   height: 80vh;
+  max-height: 600px;
   text-align: center;
-  color: ${(props) => props.theme.colors.lightText};
+  color: ${(props) => props.theme.colors.textLight};
   padding-top: 10rem;
   margin-bottom: 2rem;
 `;

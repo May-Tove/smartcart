@@ -36,7 +36,7 @@ export const ResultWrapper = styled.ul`
   height: fit-content;
   max-height: 400px;
   overflow-y: scroll;
-  background-color: #fff;
+  background-color: ${(props) => props.theme.colors.white};
   box-shadow: ${(props) => props.theme.shadows.boxShadow};
   list-style: none;
   padding: 1rem;
@@ -65,7 +65,6 @@ export const ResultHeading = styled.p`
 
 export const ResultItem = styled.li`
   a {
-    color: #333;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -74,8 +73,7 @@ export const ResultItem = styled.li`
 
     &:hover,
     &:focus {
-      background-color: #eef8fd;
-      color: ${(props) => props.theme.colors.primary};
+      background-color: ${(props) => props.theme.colors.secondary};
     }
   }
 `;
@@ -91,5 +89,5 @@ export const NoResult = styled.p`
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  color: grey;
+  color: ${(props) => props.theme.colors.textMuted};
 `;

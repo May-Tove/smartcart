@@ -56,7 +56,7 @@ const SearchBar = () => {
   return (
     <S.SearchForm role="search">
       <S.SearchWrapper>
-        <S.SearchIcon />
+        <S.SearchIcon aria-label="Search Icon" />
         <S.SearchBar
           type="search"
           onChange={handleSearchInput}

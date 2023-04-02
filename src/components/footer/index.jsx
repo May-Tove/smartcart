@@ -19,19 +19,14 @@ const Footer = () => {
             <span>Navigation</span>
             <Link to="/">Home</Link>
             <Link to="/Contact">Contact</Link>
-            <Link to="/Cart">Cart</Link>
-          </S.LinkGroup>
-          <S.LinkGroup>
-            <span>Support</span>
-            <span>FAQs</span>
-            <span>Policy</span>
+            <Link to="/Checkout">Checkout</Link>
           </S.LinkGroup>
           <S.LinkGroup>
             <span>Payment Methods</span>
             <S.Payment>
-              <SiVisa />
-              <SiApplepay />
-              <SiGooglepay />
+              <SiVisa aria-label="Visa card icon" />
+              <SiApplepay aria-label="Apple pay icon" />
+              <SiGooglepay aria-label="Google pay icon" />
             </S.Payment>
           </S.LinkGroup>
         </S.LinkWrapper>

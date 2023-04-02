@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const BackButton = styled.button`
   border: 0;
-  border-radius: 5px;
+  border-radius: ${(props) => props.theme.borderRadius.radius};
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -13,7 +13,8 @@ export const BackButton = styled.button`
   padding: 2px;
   transition: all 0.3s ease;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: ${(props) => props.theme.colors.grey};
     transition: all 0.3s ease;
   }

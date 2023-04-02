@@ -8,8 +8,12 @@ export const ProductWrapper = styled.article`
   position: relative;
 `;
 
+export const CardHeader = styled.div`
+  margin-bottom: 1rem;
+`;
+
 export const CardBody = styled.div`
-  background-color: white;
+  background-color: ${(props) => props.theme.colors.white};
   border-radius: 0 0 10px 10px;
   padding: 1rem;
 `;
@@ -22,14 +26,13 @@ export const ProductImage = styled.img`
 `;
 
 export const ProductHeading = styled.h3`
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 19px;
   margin-top: 0.4rem;
 `;
 
 export const CardFooter = styled.div`
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1rem;
 `;

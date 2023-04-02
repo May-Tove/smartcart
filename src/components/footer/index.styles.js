@@ -69,5 +69,5 @@ export const Payment = styled.div`
 
 export const Copyright = styled.div`
   padding-top: 2rem;
-  opacity: 0.5;
+  color: ${(props) => props.theme.colors.textMuted}; ;
 `;

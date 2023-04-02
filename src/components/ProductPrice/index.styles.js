@@ -22,8 +22,8 @@ export const DiscountAmount = styled.span`
   top: 0;
   left: 0;
   background-color: #e43a36;
-  color: white;
-  border-radius: 5px;
+  color: ${(props) => props.theme.colors.textLight};
+  border-radius: ${(props) => props.theme.borderRadius.radius};
   font-weight: 500;
   font-size: 14px;
   padding: 0.2rem 0.5rem;

@@ -40,7 +40,7 @@ export const ItemImg = styled.img`
   width: 100px;
   height: 100px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: ${(props) => props.theme.borderRadius.radius};
 `;
 
 export const Item = styled.div`
@@ -64,6 +64,7 @@ export const QytContainer = styled.div`
   align-items: center;
   gap: 15px;
   border: 0.2px solid grey;
+  border-radius: ${(props) => props.theme.borderRadius.radius};
   padding: 0 0.5rem;
   width: fit-content;
   margin-top: 1rem;
@@ -83,8 +84,8 @@ export const RemoveButton = styled.button`
   align-items: center;
   padding: 3px 10px;
   width: fit-content;
-  border-radius: 5px;
-  background-color: #e1ded6;
+  border-radius: ${(props) => props.theme.borderRadius.radius};
+  background-color: transparent;
   transition: all 0.3s ease;
 
   &:hover,

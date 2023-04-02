@@ -16,15 +16,17 @@ const RatingStars = ({ rating }) => {
     const newStars = [];
 
     for (let i = 0; i < Math.floor(roundedRating); i++) {
-      newStars.push(<IoMdStar key={i} />);
+      newStars.push(<IoMdStar aria-label="Star icon" key={i} />);
     }
 
     if (roundedRating % 1 !== 0) {
-      newStars.push(<IoMdStarHalf key={newStars.length} />);
+      newStars.push(
+        <IoMdStarHalf aria-label="Half star icon" key={newStars.length} />
+      );
     }
 
     for (let i = newStars.length; i < 5; i++) {
-      newStars.push(<IoMdStarOutline key={i} />);
+      newStars.push(<IoMdStarOutline aria-label="Empty star icon" key={i} />);
     }
 
     setStars(newStars);
