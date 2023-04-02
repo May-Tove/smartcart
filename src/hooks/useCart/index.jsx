@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { create } from "zustand";
 
 /**
@@ -5,43 +6,46 @@ import { create } from "zustand";
  * @param {function} set - Function that sets the state of the cart
  * @returns {Object} An object that contains the current cart, functions to add, decrease quantity and remove products from the cart, and to clear the cart.
  */
-const useCartStore = create((set) => ({
-  cart: [],
+const useCartStore = create((set) => {
+  const initialCart = JSON.parse(localStorage.getItem("cart")) || [];
+  return {
+    cart: initialCart,
 
-  addProductToCart: (item) =>
-    set((state) => {
-      const updatedCart = [...state.cart];
-      const index = state.cart.findIndex((product) => product.id === item.id);
-      if (index === -1) {
-        return { cart: [...state.cart, { ...item, quantity: 1 }] };
-      } else {
-        updatedCart[index] = {
-          ...updatedCart[index],
-          quantity: updatedCart[index].quantity + 1,
-        };
-        return { cart: updatedCart };
-      }
-    }),
-  clearCart: () => set({ cart: [] }),
-  decreaseQuantityFromCart: (item) =>
-    set((state) => {
-      const updatedCart = [...state.cart];
-      const index = state.cart.findIndex((product) => product.id === item.id);
-      if (index !== -1) {
-        if (updatedCart[index].quantity > 1) {
+    addProductToCart: (item) =>
+      set((state) => {
+        const updatedCart = [...state.cart];
+        const index = state.cart.findIndex((product) => product.id === item.id);
+        if (index === -1) {
+          return { cart: [...state.cart, { ...item, quantity: 1 }] };
+        } else {
           updatedCart[index] = {
             ...updatedCart[index],
-            quantity: updatedCart[index].quantity - 1,
+            quantity: updatedCart[index].quantity + 1,
           };
-        } else {
-          updatedCart.splice(index, 1);
+          return { cart: updatedCart };
         }
-        return { cart: updatedCart };
-      }
-    }),
-  removeProductFromCart: (product) =>
-    set((state) => ({ cart: state.cart.filter((item) => item !== product) })),
-}));
+      }),
+    clearCart: () => set({ cart: [] }),
+    decreaseQuantityFromCart: (item) =>
+      set((state) => {
+        const updatedCart = [...state.cart];
+        const index = state.cart.findIndex((product) => product.id === item.id);
+        if (index !== -1) {
+          if (updatedCart[index].quantity > 1) {
+            updatedCart[index] = {
+              ...updatedCart[index],
+              quantity: updatedCart[index].quantity - 1,
+            };
+          } else {
+            updatedCart.splice(index, 1);
+          }
+          return { cart: updatedCart };
+        }
+      }),
+    removeProductFromCart: (product) =>
+      set((state) => ({ cart: state.cart.filter((item) => item !== product) })),
+  };
+});
 
 /**
  * A hook that provides access to the cart state and its actions.
@@ -57,6 +61,10 @@ const useCart = () => {
   const removeProductFromCart = useCartStore(
     (state) => state.removeProductFromCart
   );
+
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
 
   function addToCart(item) {
     addProductToCart(item);
