@@ -26,8 +26,9 @@ The project's aim was to apply the knowledge of React.js gained during the cours
 
 ## Built With
 - [React.js](https://react.dev/) - This project was bootstrapped with Create React App.
+- [Zustand](https://www.npmjs.com/package/zustand) - Used for managing the cart state in the application.
 - [Styled Components](https://styled-components.com/)
-- Noroff Online shop API. Documentation [here](https://noroff-api-docs.netlify.app/basic-endpoints/online-shop)
+- [Noroff Online shop API](https://noroff-api-docs.netlify.app/basic-endpoints/online-shop)
     
 ### Key Libraries and Packages
 - React Icons - Used for implementing icons in the application.
