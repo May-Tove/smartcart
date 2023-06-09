@@ -1,5 +1,7 @@
 # SmartCart
 
+![Preview](./src/assets/smartcart_mockup.png)
+
 ## Overview
 
 SmartCart is an eCommerce web application designed to mimic a real-world online store experience. This project was completed as a part of the JavaScript Frameworks course at Noroff, where React.js was the core technology.
@@ -18,6 +20,7 @@ The SmartCart application provides a variety of features to offer a seamless sho
     A responsive design that works across different device types.
 
 The project's aim was to apply the knowledge of React.js gained during the course and create a practical, real-world-like web application.
+
 ## Built With
 
     React.js - This project was bootstrapped with Create React App.
@@ -53,7 +56,3 @@ To get in touch, you can reach me via:
 
     My Twitter Page
     My LinkedIn Page
-
-
-
-
