@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# SmartCart
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+SmartCart is an eCommerce web application designed to mimic a real-world online store experience. This project was completed as a part of the JavaScript Frameworks course at Noroff, where React.js was the core technology.
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+The SmartCart application provides a variety of features to offer a seamless shopping experience for its users:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Displaying a list of products on the homepage.
+    Individual product pages with detailed information, including title, description, image, and reviews if available.
+    Adding items to the cart from the product page.
+    A cart page listing all added products with a total cost, and a checkout option.
+    A checkout success page indicating a successful order placement and offering a link to go back to the store.
+    A contact page with a form ensuring data validation.
+    Using React Router to navigate between pages.
+    A responsive design that works across different device types.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The project's aim was to apply the knowledge of React.js gained during the course and create a practical, real-world-like web application.
+## Built With
 
-### `npm test`
+    React.js - This project was bootstrapped with Create React App.
+    Styled Components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project was bootstrapped with Create React App, which requires Node >= 10.16 and npm >= 5.6 on your local development machine. Make sure to install them if you haven't already.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get the project running on your local machine, follow these steps:
 
-### `npm run eject`
+Clone the repository rom GitHub
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Install the dependencies by running
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Running
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To run the app on your local machine, execute the following command:
 
-## Learn More
+    npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This will start the application and it will be available on http://localhost:3000.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contact
 
-### Code Splitting
+To get in touch, you can reach me via:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    My Twitter Page
+    My LinkedIn Page
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
