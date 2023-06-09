@@ -6,6 +6,9 @@
 
 SmartCart is an eCommerce web application designed to mimic a real-world online store experience. This project was completed as a part of the JavaScript Frameworks course at Noroff, where React.js was the core technology.
 
+### Hosted on Netlify
+[Live site](https://smartcart-js-frameworks.netlify.app/)
+
 ## Description
 
 The SmartCart application provides a variety of features to offer a seamless shopping experience for its users:
@@ -40,11 +43,9 @@ This project was bootstrapped with Create React App, which requires Node >= 10.1
 
 To get the project running on your local machine, follow these steps:
 
-Clone the repository rom GitHub
+Clone the repository rom GitHub and install the dependencies by running
 
-Install the dependencies by running
-
-    npm install
+    npm i
 
 ### Running
 
@@ -58,5 +59,4 @@ This will start the application and it will be available on http://localhost:300
 
 To get in touch, you can reach me via:
 
-    My Twitter Page
-    My LinkedIn Page
+[LinkedIn](https://no.linkedin.com/in/may-tove-hovdal-24b406153)
