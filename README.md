@@ -60,4 +60,5 @@ This will start the application and it will be available on http://localhost:300
 
 To get in touch, you can reach me via:
 
+[Email](mailto:maytoveh@gmail.com)
 [LinkedIn](https://no.linkedin.com/in/may-tove-hovdal-24b406153)
