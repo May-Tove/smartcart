@@ -22,9 +22,13 @@ The SmartCart application provides a variety of features to offer a seamless sho
 The project's aim was to apply the knowledge of React.js gained during the course and create a practical, real-world-like web application.
 
 ## Built With
-
-    React.js - This project was bootstrapped with Create React App.
-    Styled Components
+- [React.js](https://react.dev/) - This project was bootstrapped with Create React App.
+- [Styled Components](https://styled-components.com/)
+- Noroff Online shop API. Documentation [here](https://noroff-api-docs.netlify.app/basic-endpoints/online-shop)
+    
+### Key Libraries and Packages
+- React Icons - Used for implementing icons in the application.
+- React Toastify - Used for displaying notifications to the user.
 
 ## Getting Started
 
